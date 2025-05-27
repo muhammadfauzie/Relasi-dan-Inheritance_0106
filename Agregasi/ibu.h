@@ -1,0 +1,30 @@
+#ifndef IBU_H
+#define IBU_H
+
+class ibu {
+    public:
+        string nama;
+        vektor<anak*> daftar_anak;
+
+        ibu(string pNama): nama(pNama){
+            cout << "ibu \"" << nama <<"\" ada\n"; 
+        }
+
+        ~ibu() {
+            cout << "ibu \"" << nama << "\" tidak ada\n";
+
+        }
+
+        void tambahanAnak(anak*);
+        void cetakAnak();
+};
+
+void ibu::cetakAnak(){
+    cout << "Daftar Anak dari ibu \"" <<
+    this->nama << "\":\n";
+    for (int i = 0; i < daftar_anak.size(); i++) {
+        cout << "Anak ke-" << (i + 1) << ": " 
+             << daftar_anak[i]->nama << endl;
+    }
+    cout << endl;
+};
