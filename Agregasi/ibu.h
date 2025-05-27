@@ -19,12 +19,3 @@ class ibu {
         void cetakAnak();
 };
 
-void ibu::cetakAnak(){
-    cout << "Daftar Anak dari ibu \"" <<
-    this->nama << "\":\n";
-    for (int i = 0; i < daftar_anak.size(); i++) {
-        cout << "Anak ke-" << (i + 1) << ": " 
-             << daftar_anak[i]->nama << endl;
-    }
-    cout << endl;
-};
