@@ -7,3 +7,9 @@ class Anak{
         anak (string pNama): nama(pNama) {
             cout << "Anak " << nama << " telah dibuat." << endl;
         }
+
+        ~anak() {
+            cout << "Anak \"" << nama << "\" tidak ada\n";
+        }
+};
+#endif
