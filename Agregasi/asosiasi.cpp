@@ -38,3 +38,15 @@ class dokter {
         void cetakPasien();
 };
 
+void pasien::tambahDokter(dokter* pDokter) {
+    daftar_dokter.push_back(pDokter);
+}
+
+void pasien::cetakDokter() {
+    cout << "Daftar dokter yang menangani Pasien \"" 
+         << this->nama << "\":\n";
+    for (auto& a : daftar_dokter) {
+        cout << a->nama << "\n";
+    } 
+    cout << endl;
+}
