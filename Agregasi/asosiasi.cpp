@@ -1,18 +1,21 @@
 #include <iostream>
-#include <vektor>
+#include <vector>
 using namespace std;
 
 class dokter;
 class pasien{
     public:
         string nama;
-        vektor<dokter*> daftar_dokter;
+        vector<dokter*> daftar_dokter;
         pasien(string pNama): nama(pNama){
             cout << "Pasien \"" << nama <<"\" ada\n"; 
         }
 
         ~pasien() {
             cout << "Pasien \"" << nama
-                << "\" tidak ada\n";
+             << "\" tidak ada\n";
         }
-}
+
+        void tambahDokter(dokter*);
+        void cetakDokter();
+};

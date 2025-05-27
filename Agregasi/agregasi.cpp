@@ -1,8 +1,8 @@
 #include <iostream>
-#include <vektor>
+#include <vector>
 using namespace std;
 
-#include "ibu.h"
+#include "anak.h"
 #include "ibu.h"
 
 int main() {
@@ -14,11 +14,8 @@ int main() {
 
     varIbu->tambahanAnak(varAnak1);
     varIbu->tambahanAnak(varAnak2);
-    varIbu->tambahAnak(varAnak3);
-    varIbu->tambahAnak(varAnak1);
-
-    varIbu->cetakAnak();
-    varIbu2->cetakAnak();
+    varIbu2->tambahAnak(varAnak3);
+    varIbu2->tambahAnak(varAnak1);
 
     delete varIbu;
     delete varIbu2;
@@ -26,4 +23,4 @@ int main() {
     delete varAnak2;
     delete varAnak3;
     
-}
+};
